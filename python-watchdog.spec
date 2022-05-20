@@ -1,9 +1,9 @@
 %global _empty_manifest_terminate_build 0
 Name:		python-watchdog
 Version:	2.1.3
-Release:	1
+Release:	2
 Summary:	Filesystem events monitoring
-License:	Apache License 2.0
+License:	Apache-2.0
 URL:		https://github.com/gorakhargosh/watchdog
 Source0:	https://files.pythonhosted.org/packages/f5/c2/d1ff8343cd38138561d2f08aba7b0566020485346097019f3a87773c96fc/watchdog-2.1.3.tar.gz
 
@@ -74,5 +74,8 @@ mv %{buildroot}/doclist.lst .
 %{_docdir}/*
 
 %changelog
+* Fri May 20 2022 liukuo <liukuo@kylinos.cn> - 2.1.3-2
+- License compliance rectification
+
 * Thu Jul 22 2021 Python_Bot <Python_Bot@openeuler.org>
 - Package Spec generated
