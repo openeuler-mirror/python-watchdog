@@ -1,11 +1,11 @@
 %global _empty_manifest_terminate_build 0
 Name:		python-watchdog
-Version:	2.1.3
-Release:	2
+Version:	2.1.9
+Release:	1
 Summary:	Filesystem events monitoring
 License:	Apache-2.0
 URL:		https://github.com/gorakhargosh/watchdog
-Source0:	https://files.pythonhosted.org/packages/f5/c2/d1ff8343cd38138561d2f08aba7b0566020485346097019f3a87773c96fc/watchdog-2.1.3.tar.gz
+Source0:	https://files.pythonhosted.org/packages/42/f7/da8e889f8626786eac9454e8d2718fc79359ed517be20cdd50c647167d39/watchdog-2.1.9.tar.gz
 
 Requires:	python3-PyYAML
 Requires:	python3-argh
@@ -34,7 +34,7 @@ Python API and shell utilities to monitor file system events.
 Works on 3.6+.
 
 %prep
-%autosetup -n watchdog-2.1.3
+%autosetup -n watchdog-2.1.9
 
 %build
 %py3_build
@@ -74,6 +74,9 @@ mv %{buildroot}/doclist.lst .
 %{_docdir}/*
 
 %changelog
+* Tue Aug 23 2022 hkgy <kaguyahatu@outlook.com> - 2.1.9-1
+- Update to 2.1.9
+
 * Fri May 20 2022 liukuo <liukuo@kylinos.cn> - 2.1.3-2
 - License compliance rectification
 
